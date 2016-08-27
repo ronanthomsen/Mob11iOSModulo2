@@ -21,6 +21,14 @@
 		34992B661D6A70790056AEB5 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34992B5F1D6A70790056AEB5 /* ReaderOverlayView.swift */; };
 		34992B671D6A70790056AEB5 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34992B601D6A70790056AEB5 /* SwitchCameraButton.swift */; };
 		34992B681D6A70790056AEB5 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34992B611D6A70790056AEB5 /* ToggleTorchButton.swift */; };
+		AC4AFF121D71E6F500E89AD4 /* Recycle-points-icons.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF111D71E6F500E89AD4 /* Recycle-points-icons.png */; };
+		AC4AFF1A1D71FE2800E89AD4 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF131D71FE2800E89AD4 /* Icon-App-29x29@2x.png */; };
+		AC4AFF1B1D71FE2800E89AD4 /* Icon-App-29x29@3x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF141D71FE2800E89AD4 /* Icon-App-29x29@3x-1.png */; };
+		AC4AFF1C1D71FE2800E89AD4 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF151D71FE2800E89AD4 /* Icon-App-29x29@3x.png */; };
+		AC4AFF1D1D71FE2800E89AD4 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF161D71FE2800E89AD4 /* Icon-App-40x40@2x.png */; };
+		AC4AFF1E1D71FE2800E89AD4 /* Icon-App-40x40@3x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF171D71FE2800E89AD4 /* Icon-App-40x40@3x-1.png */; };
+		AC4AFF1F1D71FE2800E89AD4 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF181D71FE2800E89AD4 /* Icon-App-40x40@3x.png */; };
+		AC4AFF201D71FE2800E89AD4 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4AFF191D71FE2800E89AD4 /* Icon-App-60x60@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		34992B291D6A6FE30056AEB5 /* LeitorQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeitorQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34992B291D6A6FE30056AEB5 /* iRecycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRecycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34992B2C1D6A6FE40056AEB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34992B2E1D6A6FE40056AEB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34992B311D6A6FE40056AEB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,14 @@
 		34992B5F1D6A70790056AEB5 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		34992B601D6A70790056AEB5 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		34992B611D6A70790056AEB5 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		AC4AFF111D71E6F500E89AD4 /* Recycle-points-icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Recycle-points-icons.png"; path = "images/Recycle-points-icons.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF131D71FE2800E89AD4 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-29x29@2x.png"; path = "images/Icon-App-29x29@2x.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF141D71FE2800E89AD4 /* Icon-App-29x29@3x-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-29x29@3x-1.png"; path = "images/Icon-App-29x29@3x-1.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF151D71FE2800E89AD4 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-29x29@3x.png"; path = "images/Icon-App-29x29@3x.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF161D71FE2800E89AD4 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-40x40@2x.png"; path = "images/Icon-App-40x40@2x.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF171D71FE2800E89AD4 /* Icon-App-40x40@3x-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-40x40@3x-1.png"; path = "images/Icon-App-40x40@3x-1.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF181D71FE2800E89AD4 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-40x40@3x.png"; path = "images/Icon-App-40x40@3x.png"; sourceTree = SOURCE_ROOT; };
+		AC4AFF191D71FE2800E89AD4 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App-60x60@3x.png"; path = "images/Icon-App-60x60@3x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +118,7 @@
 		34992B2A1D6A6FE30056AEB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34992B291D6A6FE30056AEB5 /* LeitorQRCode.app */,
+				34992B291D6A6FE30056AEB5 /* iRecycle.app */,
 				34992B3D1D6A6FE40056AEB5 /* LeitorQRCodeTests.xctest */,
 				34992B481D6A6FE40056AEB5 /* LeitorQRCodeUITests.xctest */,
 			);
@@ -112,6 +128,7 @@
 		34992B2B1D6A6FE30056AEB5 /* LeitorQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				AC4AFF101D71E69E00E89AD4 /* Images */,
 				34992B2C1D6A6FE40056AEB5 /* AppDelegate.swift */,
 				34992B2E1D6A6FE40056AEB5 /* ViewController.swift */,
 				34992B301D6A6FE40056AEB5 /* Main.storyboard */,
@@ -154,6 +171,21 @@
 			name = QRCodeReader;
 			sourceTree = "<group>";
 		};
+		AC4AFF101D71E69E00E89AD4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AC4AFF131D71FE2800E89AD4 /* Icon-App-29x29@2x.png */,
+				AC4AFF141D71FE2800E89AD4 /* Icon-App-29x29@3x-1.png */,
+				AC4AFF151D71FE2800E89AD4 /* Icon-App-29x29@3x.png */,
+				AC4AFF161D71FE2800E89AD4 /* Icon-App-40x40@2x.png */,
+				AC4AFF171D71FE2800E89AD4 /* Icon-App-40x40@3x-1.png */,
+				AC4AFF181D71FE2800E89AD4 /* Icon-App-40x40@3x.png */,
+				AC4AFF191D71FE2800E89AD4 /* Icon-App-60x60@3x.png */,
+				AC4AFF111D71E6F500E89AD4 /* Recycle-points-icons.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,7 +203,7 @@
 			);
 			name = LeitorQRCode;
 			productName = LeitorQRCode;
-			productReference = 34992B291D6A6FE30056AEB5 /* LeitorQRCode.app */;
+			productReference = 34992B291D6A6FE30056AEB5 /* iRecycle.app */;
 			productType = "com.apple.product-type.application";
 		};
 		34992B3C1D6A6FE40056AEB5 /* LeitorQRCodeTests */ = {
@@ -258,9 +290,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4AFF1A1D71FE2800E89AD4 /* Icon-App-29x29@2x.png in Resources */,
 				34992B371D6A6FE40056AEB5 /* LaunchScreen.storyboard in Resources */,
+				AC4AFF1C1D71FE2800E89AD4 /* Icon-App-29x29@3x.png in Resources */,
+				AC4AFF121D71E6F500E89AD4 /* Recycle-points-icons.png in Resources */,
 				34992B341D6A6FE40056AEB5 /* Assets.xcassets in Resources */,
+				AC4AFF201D71FE2800E89AD4 /* Icon-App-60x60@3x.png in Resources */,
+				AC4AFF1F1D71FE2800E89AD4 /* Icon-App-40x40@3x.png in Resources */,
 				34992B321D6A6FE40056AEB5 /* Main.storyboard in Resources */,
+				AC4AFF1D1D71FE2800E89AD4 /* Icon-App-40x40@2x.png in Resources */,
+				AC4AFF1E1D71FE2800E89AD4 /* Icon-App-40x40@3x-1.png in Resources */,
+				AC4AFF1B1D71FE2800E89AD4 /* Icon-App-29x29@3x-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +478,7 @@
 				INFOPLIST_FILE = LeitorQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ronan.LeitorQRCode;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iRecycle;
 			};
 			name = Debug;
 		};
@@ -449,7 +489,7 @@
 				INFOPLIST_FILE = LeitorQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ronan.LeitorQRCode;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iRecycle;
 			};
 			name = Release;
 		};
@@ -518,6 +558,7 @@
 				34992B531D6A6FE40056AEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34992B541D6A6FE40056AEB5 /* Build configuration list for PBXNativeTarget "LeitorQRCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +567,7 @@
 				34992B561D6A6FE40056AEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34992B571D6A6FE40056AEB5 /* Build configuration list for PBXNativeTarget "LeitorQRCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +576,7 @@
 				34992B591D6A6FE40056AEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
