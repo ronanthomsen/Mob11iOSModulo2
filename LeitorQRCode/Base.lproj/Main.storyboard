@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LeitorQRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iRecycle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,9 +36,18 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfn-2o-bXo">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="259" width="51" height="31"/>
+                                    <rect key="frame" x="236" y="267" width="51" height="31"/>
                                 </variation>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REST RESULT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mh-44v">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="82" y="169" width="254" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -60,6 +69,7 @@
                                 <exclude reference="gPI-lf-Cfe"/>
                                 <exclude reference="wKu-yE-NL9"/>
                                 <exclude reference="Qfn-2o-bXo"/>
+                                <exclude reference="ZI5-mh-44v"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="ReR-j6-tUu"/>
@@ -81,6 +91,7 @@
                                 <include reference="gPI-lf-Cfe"/>
                                 <include reference="wKu-yE-NL9"/>
                                 <include reference="Qfn-2o-bXo"/>
+                                <include reference="ZI5-mh-44v"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="ReR-j6-tUu"/>
@@ -99,12 +110,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="lbRestResult" destination="ZI5-mh-44v" id="UrA-6p-vON"/>
                         <outlet property="showCancelButtonSwitch" destination="Qfn-2o-bXo" id="zgA-ec-uZV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160" y="379"/>
+            <point key="canvasLocation" x="159" y="379"/>
         </scene>
     </scenes>
 </document>

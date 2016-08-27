@@ -13,6 +13,7 @@ import AVFoundation
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     
     @IBOutlet weak var showCancelButtonSwitch: UISwitch!
+    @IBOutlet weak var lbRestResult: UILabel!
     
     @IBAction func scanAction(sender: AnyObject) {
         if QRCodeReader.supportsMetadataObjectTypes() {
@@ -53,6 +54,8 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         
          UIApplication.sharedApplication().openURL(NSURL(string: "\(result.value)")!)
         
+        postDataToURL(result.value)
+        
     }
     
     func readerDidCancel(reader: QRCodeReaderViewController) {
@@ -68,4 +71,44 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         
         return QRCodeReaderViewController(builder: builder)
     }
+    
+    
+    func postDataToURL(qrcode: String) {
+        
+        // Setup the session to make REST POST call
+        //let postEndpoint: String = "http://localhost:8080/IRecycle/validaQRCode?id=\(qrcode)"
+        let postEndpoint: String = "http://172.16.70.127:8080/IRecycle/validaQRCode?id=\(qrcode)"
+        let url = NSURL(string: postEndpoint)!
+        let session = NSURLSession.sharedSession()
+        //let postParams : [String: AnyObject] = ["id": "teste"]
+        
+        
+        // Create the request
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
+        
+        
+        // Make the POST call and handle it in a completion handler
+        let task = session.dataTaskWithRequest(request){
+            data, response, error in
+            if error != nil{
+                print("ERROR \(error)")
+                return
+            }
+            
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding )
+            print("SAIU AQUI \(responseString!)")
+            
+            self.performSelectorOnMainThread("updatePostLabel:", withObject: String(responseString!), waitUntilDone: false)
+        }
+        task.resume()
+    }
+    
+    //MARK: - Methods to update the UI immediately
+    func updatePostLabel(text: String) {
+        self.lbRestResult.text = "POST : " + text
+    }
+
+    
+    
 }
