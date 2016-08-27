@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form name="QRCode_Gerador" id="QRCode_Gerador">
+
+<br/><br/><br/><br/>
+<div>
+	<label>Insira o Peso:</label>
+<input type="text" name="entradaPeso" id="entradaPeso" />
+<input type="button" name="pegaPeso" id="pegaPeso" value="Gerar QRCode" onclick="geraQRCode(document.getElementById('entradaPeso').value)" />
+</div>
+<div id="mostraQRCode">
+
+<script type="text/javascript">
+	
+function geraQRCode(peso){
+
+	//var peso = document.getElementsByName('entradaPeso').value;
+
+	if(peso){
+
+			document.getElementById("mostraQRCode").innerHTML = '<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl='+peso+'" title="Gerador QRCode Google API" />';
+	}else{
+
+		alert("Preencha o campo do peso");
+		
+	}
+	
+}
+
+
+</script>
+</div>
+
+</form>
+
+</body>
+</html>
