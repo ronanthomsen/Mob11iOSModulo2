@@ -1,14 +1,14 @@
 //
-//  LeitorQRCodeUITests.swift
-//  LeitorQRCodeUITests
+//  iRecycleUITests.swift
+//  iRecycleUITests
 //
-//  Created by Ronan on 8/21/16.
+//  Created by Ronan on 8/30/16.
 //  Copyright © 2016 RONAN. All rights reserved.
 //
 
 import XCTest
 
-class LeitorQRCodeUITests: XCTestCase {
+class iRecycleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
