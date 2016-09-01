@@ -12,7 +12,7 @@ import AVFoundation
 
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     
-    @IBOutlet weak var showCancelButtonSwitch: UISwitch!
+    //@IBOutlet weak var showCancelButtonSwitch: UISwitch!
     @IBOutlet weak var lbRestResult: UILabel!
     
     @IBAction func scanAction(sender: AnyObject) {
@@ -66,7 +66,8 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         let builder = QRCodeViewControllerBuilder { builder in
             builder.reader          = QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
             builder.showTorchButton = true
-            builder.showCancelButton = self.showCancelButtonSwitch.on
+            builder.showCancelButton = true
+            //self.showCancelButtonSwitch.on
         }
         
         return QRCodeReaderViewController(builder: builder)
@@ -76,8 +77,11 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     func postDataToURL(qrcode: String) {
         
         // Setup the session to make REST POST call
+        // o padrao para a passagem da msg sera peso_fiap_usuario_userId_timestemp
+        //resposta true ou false _ peso -> true_pesoAtual_pesoTotal
+        
         //let postEndpoint: String = "http://localhost:8080/IRecycle/validaQRCode?id=\(qrcode)"
-        let postEndpoint: String = "http://172.16.70.127:8080/IRecycle/validaQRCode?id=\(qrcode)"
+        let postEndpoint: String = "http://172.16.70.79:8080/IRecycle/validaQRCode?id=\(qrcode)"
         let url = NSURL(string: postEndpoint)!
         let session = NSURLSession.sharedSession()
         //let postParams : [String: AnyObject] = ["id": "teste"]
