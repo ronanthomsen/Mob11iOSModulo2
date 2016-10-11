@@ -11,8 +11,11 @@ import UIKit
 class RestController: UIViewController {
 
     //let urlLogin = "http://172.16.70.104:8080/IRecycle/validaQRCode?id="
-    let urlLogin = "http://172.16.70.113:8080/IRecycle/Login?"
-    let urlAtualisaPeso = "http://172.16.70.113:8080/IRecycle/validaQRCode?id="
+    let urlLogin = "http://172.16.71.102:8080/IRecycle/Login?"
+    let urlAtualisaPeso = "http://172.16.71.102:8080/IRecycle/validaQRCode?id="
+    //falta preparar 
+    ///let cadastraLogin = "172.16.71.102:8080/IRecycle/Cadastro?user=teste2&pass=123"
+    let cadastraLogin = "http://172.16.71.102:8080/IRecycle/Cadastro?"
     var defautSession:NSUserDefaults!
     var retorno: String!
     
@@ -20,12 +23,7 @@ class RestController: UIViewController {
         super.viewDidLoad()
         
         //self.defautSession = NSUserDefaults.standardUserDefaults()
-        
-        
-        
-        
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,6 +114,59 @@ class RestController: UIViewController {
         print("\(confimServer) RESPOSTA SERVER")
         
     }
+    
+// Funcao para criar o usuário no servidor
+    
+    func restCriaLogin(usuario_senha: String) {
+        
+        print("\(usuario_senha)")
+        
+        let postEndpoint: String = cadastraLogin+"\(usuario_senha)"
+        let url = NSURL(string: postEndpoint)!
+        let session = NSURLSession.sharedSession()
+        //let postParams : [String: AnyObject] = ["id": "teste"]
+        
+        // Create the request
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
+        
+        // Make the POST call and handle it in a completion handler
+        let task = session.dataTaskWithRequest(request){
+            data, response, error in
+            if error != nil{
+                print("ERROR \(error)")
+                return
+            }
+            
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding )
+            
+            self.performSelectorOnMainThread(#selector(RestController.validaRetornoCadastroLogin(_:)), withObject: String(responseString!), waitUntilDone: false)
+            
+            
+        }
+        task.resume()
+    }
+    
+    func validaRetornoCadastroLogin(retornoLogin: String){
+        
+        print("Valor Retorno Servidor: \(retornoLogin)")
+        
+        var temp = retornoLogin.componentsSeparatedByString("_")
+        
+        if temp[0] == "true" {
+            
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject(retornoLogin, forKey: "vLoginC")
+            
+        }
+        
+        
+        
+        
+    }
+
+
+    
     
  
 

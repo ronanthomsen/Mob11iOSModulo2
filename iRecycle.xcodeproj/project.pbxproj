@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3452B4991D77109C00EEBEF0 /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452B4981D77109C00EEBEF0 /* RestController.swift */; };
+		34B720641DAC4D4A00A36944 /* Recycle-Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B720631DAC4D4A00A36944 /* Recycle-Back.png */; };
 		34DEDF371D766CE000B51FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DEDF361D766CE000B51FBE /* AppDelegate.swift */; };
 		34DEDF391D766CE000B51FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DEDF381D766CE000B51FBE /* ViewController.swift */; };
 		34DEDF3F1D766CE000B51FBE /* iRecycle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34DEDF3D1D766CE000B51FBE /* iRecycle.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		3452B4981D77109C00EEBEF0 /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestController.swift; path = ../RestController.swift; sourceTree = "<group>"; };
+		34B720631DAC4D4A00A36944 /* Recycle-Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recycle-Back.png"; sourceTree = "<group>"; };
 		34DEDF331D766CE000B51FBE /* iRecycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRecycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DEDF361D766CE000B51FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34DEDF381D766CE000B51FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		34DEDF671D766DBB00B51FBE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				34B720631DAC4D4A00A36944 /* Recycle-Back.png */,
 				34DEDF681D766DDA00B51FBE /* Icon-App-29x29@2x.png */,
 				34DEDF691D766DDA00B51FBE /* Icon-App-29x29@3x-1.png */,
 				34DEDF6A1D766DDA00B51FBE /* Icon-App-29x29@3x.png */,
@@ -313,6 +316,7 @@
 				34DEDF441D766CE000B51FBE /* LaunchScreen.storyboard in Resources */,
 				34DEDF411D766CE000B51FBE /* Assets.xcassets in Resources */,
 				34DEDF731D766DDA00B51FBE /* Icon-App-40x40@2x.png in Resources */,
+				34B720641DAC4D4A00A36944 /* Recycle-Back.png in Resources */,
 				34DEDF711D766DDA00B51FBE /* Icon-App-29x29@3x-1.png in Resources */,
 				34DEDF751D766DDA00B51FBE /* Icon-App-40x40@3x.png in Resources */,
 				34DEDF721D766DDA00B51FBE /* Icon-App-29x29@3x.png in Resources */,

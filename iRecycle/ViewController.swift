@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 //função para validar se o login digitado é o mesmo obtido pelo servidor
     func validaLogin(){
     
-        var chamadaRest: RestController = RestController()
+        let chamadaRest: RestController = RestController()
         let usuario_senha: String = "user="+String(txtUsuario.text!)+"&pass="+String(txtSenha.text!)
         chamadaRest.restValidaLogin(usuario_senha)
         
@@ -69,6 +69,7 @@ class ViewController: UIViewController {
         
         if txtUsuario.hasText() && txtSenha.hasText(){
             validaLogin()
+            sleep(10)
             
             if let login = defaults.stringForKey("vLogin") {
                 
