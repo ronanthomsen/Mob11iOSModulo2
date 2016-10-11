@@ -57,4 +57,19 @@ public class UserService {
 		return null;
 	}
 	
+	public String createLogin(String userName, String pass){
+		EntityManager manager = new JPAUtil().getEntityManager();
+		
+		User user = new User();
+		user.setName(userName);
+		user.setPass(pass);
+		
+		manager.getTransaction().begin();
+		manager.persist(user);
+		manager.getTransaction().commit();
+		manager.close();
+		
+		return validaLogin(userName, pass);
+	}
+	
 }
